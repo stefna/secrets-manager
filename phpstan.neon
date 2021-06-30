@@ -1,4 +1,7 @@
 parameters:
 	level: 8
 	paths:
-		- src
+		- packages/core/src
+		- packages/core/tests
+		- packages/json-provider/src
+		- packages/json-provider/tests

@@ -1,0 +1,41 @@
+{
+	"name": "stefna/secrets-manager-mono",
+	"description": "Secrets manager for stefna projects",
+	"type": "library",
+	"license": "proprietary",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"authors": [
+		{
+			"name": "Andreas Sundqvist",
+			"email": "andreas@stefna.is"
+		}
+	],
+	"require": {
+		"php": "^7.1 || ^8.0",
+		"ext-json": "*"
+	},
+	"require-dev": {
+		"stefna/codestyle": "^1.5",
+		"phpstan/phpstan": "^0.12.62",
+		"phpunit/phpunit": "^9.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"Stefna\\SecretsManager\\": "packages/core/src/",
+			"Stefna\\SecretsManager\\Provider\\JsonProvider\\": "packages/json-provider/src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Stefna\\SecretsManager\\Tests\\": "packages/core/tests/",
+			"Stefna\\SecretsManager\\Provider\\JsonProvider\\Tests\\": "packages/json-provider/tests/"
+		}
+	},
+	"repositories": [
+		{"type": "composer", "url": "https://repo.packagist.com/stefnadev/"}
+	],
+	"scripts": {
+		"cs": "./vendor/bin/phpcs --standard=vendor/stefna/codestyle/library.xml packages/*/src packages/*/tests"
+	}
+}
