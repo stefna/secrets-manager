@@ -32,9 +32,6 @@
 			"Stefna\\SecretsManager\\Provider\\JsonProvider\\Tests\\": "packages/json-provider/tests/"
 		}
 	},
-	"repositories": [
-		{"type": "composer", "url": "https://repo.packagist.com/stefnadev/"}
-	],
 	"scripts": {
 		"cs": "./vendor/bin/phpcs --standard=vendor/stefna/codestyle/library.xml packages/*/src packages/*/tests"
 	}
