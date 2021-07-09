@@ -20,6 +20,7 @@
 		"phpstan/phpstan": "^0.12.62",
 		"phpunit/phpunit": "^8.5 || ^9.5",
 		"async-aws/ssm": "^1.2.0",
+		"async-aws/secrets-manager": "^0.1.0",
 		"psr/cache": "^1.0.0 || ^3.0.0 || ^2.0.0",
 		"cache/tag-interop": "^1.0"
 	},
@@ -27,6 +28,7 @@
 		"psr-4": {
 			"Stefna\\SecretsManager\\": "packages/core/src/",
 			"Stefna\\SecretsManager\\Provider\\JsonProvider\\": "packages/json-provider/src/",
+			"Stefna\\SecretsManager\\Provider\\AwsSecretsManager\\": "packages/aws-secrets-manager-provider/src/",
 			"Stefna\\SecretsManager\\Provider\\AwsSsm\\": "packages/aws-parameter-store-provider/src/",
 			"Stefna\\SecretsManager\\Provider\\Psr6\\": "packages/psr-6-provider/src/"
 		}
@@ -35,6 +37,7 @@
 		"psr-4": {
 			"Stefna\\SecretsManager\\Tests\\": "packages/core/tests/",
 			"Stefna\\SecretsManager\\Provider\\JsonProvider\\Tests\\": "packages/json-provider/tests/",
+			"Stefna\\SecretsManager\\Provider\\AwsSecretsManager\\Tests\\": "packages/aws-secrets-manager-provider/tests/",
 			"Stefna\\SecretsManager\\Provider\\AwsSsm\\Tests\\": "packages/aws-parameter-store-provider/tests/",
 			"Stefna\\SecretsManager\\Provider\\Psr6\\Tests\\": "packages/psr-6-provider/tests/"
 		}

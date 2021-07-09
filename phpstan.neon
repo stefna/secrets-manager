@@ -7,5 +7,7 @@ parameters:
 		- packages/json-provider/tests
 		- packages/psr-6-provider/src
 		- packages/psr-6-provider/tests
+		- packages/aws-secrets-manager-provider/src
+		- packages/aws-secrets-manager-provider/tests
 		- packages/aws-parameter-store-provider/src
 		- packages/aws-parameter-store-provider/tests
