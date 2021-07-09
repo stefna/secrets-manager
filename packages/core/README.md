@@ -17,7 +17,7 @@
 ## Installation
 
 ```bash
-$ composer require stefna/secrets-manager
+$ composer require stefna/secrets-manager-core
 ```
 
 The core only provides the basic functionality and some basic inmemory providers. 
